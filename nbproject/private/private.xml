@@ -2,6 +2,13 @@
 <project-private xmlns="http://www.netbeans.org/ns/project-private/1">
     <editor-bookmarks xmlns="http://www.netbeans.org/ns/editor-bookmarks/2" lastBookmarkId="0"/>
     <open-files xmlns="http://www.netbeans.org/ns/projectui-open-files/2">
+<<<<<<< HEAD
         <group/>
+=======
+        <group>
+            <file>file:/D:/irul/BERKAS/kuliah/Pemrograman%20Java/Tugas%20UTS/academic-information-system/src/inventorysystem/InventoryForm.java</file>
+            <file>file:/D:/irul/BERKAS/kuliah/Pemrograman%20Java/Tugas%20UTS/academic-information-system/src/inventorysystem/Dosen.java</file>
+        </group>
+>>>>>>> b813f0676c5a52b8cd5a38542fe5c71b1cb844f9
     </open-files>
 </project-private>
