@@ -275,7 +275,16 @@ public class JurusanForm extends javax.swing.JFrame {
     }//GEN-LAST:event_updateJurBtnActionPerformed
 
     private void deleteJurBtnActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_deleteJurBtnActionPerformed
-        // TODO add your handling code here:
+        try {
+            String sql = "DELETE FROM jurusan WHERE id_jurusan = '" + kodeJurField.getText() + "'";
+            Connection conn = (Connection)Config.configDB();
+            PreparedStatement pst = conn.prepareStatement(sql);
+            pst.execute();
+            JOptionPane.showMessageDialog(this, "Data berhasil dihapus");
+        } catch (Exception e) {
+            JOptionPane.showConfirmDialog(this, "Data gagal dihapus, karena " + e.getMessage());
+        }
+        loadTable();
     }//GEN-LAST:event_deleteJurBtnActionPerformed
 
     private void tblJrsMouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_tblJrsMouseClicked
@@ -302,7 +311,7 @@ public class JurusanForm extends javax.swing.JFrame {
             Statement sttm = conn.createStatement();
             ResultSet rs = sttm.executeQuery(sql);
             while(rs.next()) {
-                model.addRow(new Object[]{no_tb++, rs.getString(1), rs.getString(2), rs.getString(3), rs.getString(4), rs.getString(5)});    
+                model.addRow(new Object[]{no_tb++, rs.getString(1), rs.getString(2), rs.getString(3)});    
             }
             tblJrs.setModel(model);
         } catch (Exception e) {
