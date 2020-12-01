@@ -371,11 +371,7 @@ public class InventoryForm extends javax.swing.JFrame {
                 .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
                     .addComponent(jLabel5)
                     .addComponent(txtTelf, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
-<<<<<<< HEAD
                 .addContainerGap(24, Short.MAX_VALUE))
-=======
-                .addContainerGap(56, Short.MAX_VALUE))
->>>>>>> af8e539e83184bee8ec1bd13a927344ab482c720
         );
 
         jPanel5.add(jPanel1);
